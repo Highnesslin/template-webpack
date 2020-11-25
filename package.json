@@ -1,0 +1,29 @@
+{
+  "name": "template-webpack",
+  "version": "1.0.0",
+  "description": "just a demo",
+  "main": "index.js",
+  "scripts": {
+    "format": "onchange './*.js' 'src/**/*.js' 'static/**/*.html' 'static/**/*.js' -- prettier --write {{changed}}"
+  },
+  "keywords": [
+    "prettier",
+    "eslint",
+    "husky",
+    "webpack"
+  ],
+  "author": "Linhao <2212477518@qq.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "prettier": "^2.2.0",
+    "pretty-quick": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
