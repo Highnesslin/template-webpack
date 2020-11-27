@@ -67,3 +67,11 @@ yarn add pretty-quick husky --dev
   }
 }
 ```
+
+### 配置 .prettierignore
+
+```
+public
+dist
+*.html
+```
